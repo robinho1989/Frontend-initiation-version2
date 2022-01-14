@@ -1,0 +1,258 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FCDFF6;
+}
+
+.form {
+  max-height: 840px;
+  width: 100%;
+  min-width: 272px;
+  max-width: 428px;
+  -webkit-box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03), 0px 51.1542px 51.419px rgba(0, 0, 0, 0.0182814), 0px 31.2614px 32.7222px rgba(0, 0, 0, 0.0145485), 0px 19.7px 20.341px rgba(0, 0, 0, 0.0131802), 0px 12.1574px 11.8781px rgba(0, 0, 0, 0.012699), 0px 6.89112px 6.09643px rgba(0, 0, 0, 0.0121579), 0px 3.01109px 2.28593px rgba(0, 0, 0, 0.0102347);
+          box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03), 0px 51.1542px 51.419px rgba(0, 0, 0, 0.0182814), 0px 31.2614px 32.7222px rgba(0, 0, 0, 0.0145485), 0px 19.7px 20.341px rgba(0, 0, 0, 0.0131802), 0px 12.1574px 11.8781px rgba(0, 0, 0, 0.012699), 0px 6.89112px 6.09643px rgba(0, 0, 0, 0.0121579), 0px 3.01109px 2.28593px rgba(0, 0, 0, 0.0102347);
+  border-radius: 32px;
+  overflow: hidden;
+}
+
+.form__header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  min-height: 256px;
+  max-height: 259px;
+  background: conic-gradient(from 169.32deg at 107.61% 54.63%, rgba(254, 170, 228, 0) 0deg, #FDA9E7 18.03deg, rgba(254, 170, 229, 0) 104.03deg, rgba(254, 170, 228, 0) 360deg), radial-gradient(38.17% 86.77% at 10.46% 79.54%, #FFEEC3 0%, rgba(255, 238, 195, 0) 100%), radial-gradient(61.14% 73.94% at 44.57% -39.19%, #9ED2FF 0%, rgba(158, 210, 255, 0) 100%), #FFFFFF;
+}
+
+.form__avatar {
+  margin: 16px 0;
+  height: 72px;
+  width: 72px;
+  border-radius: 24px;
+  background: #ffffff;
+}
+
+.form__nav {
+  position: absolute;
+  bottom: 0;
+}
+
+.form__nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form__nav-item {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 35px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #797979;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  position: relative;
+  margin: 0 6px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.form__nav-item--active {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.form__nav-item--active::before, .form__nav-item--active::after {
+  content: '';
+  background-size: cover;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 9px;
+  height: 9px;
+}
+
+.form__nav-item--active::before {
+  background-image: url("/img/left.svg");
+  left: -9px;
+}
+
+.form__nav-item--active::after {
+  background-image: url("/img/right.svg");
+  right: -9px;
+}
+
+.form__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 32px 18px 32px 18px;
+  min-height: 492px;
+  max-height: 581px;
+  background-color: #ffffff;
+}
+
+.form__range-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form__input {
+  font-size: 14px;
+  font-weight: 400;
+  color: #797979;
+  border: none;
+}
+
+.form__input--head {
+  min-height: 32px;
+  width: 100%;
+  min-width: 210px;
+  max-width: 256px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  border-radius: 16px;
+  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form__input--main {
+  margin: 4px 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+.form__label-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form__label-header {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.form__paragraph {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.form__range[type='range'] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#9ED2FF), color-stop(101.17%, #FDA9E7));
+  background-image: linear-gradient(90deg, #9ED2FF 0%, #FDA9E7 101.17%);
+}
+
+.form__range[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #FFE1CA 0%, #FFAEE6 100%);
+}
+
+.form__btn {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 8px 16px;
+  height: 42px;
+  width: 99px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  background: #F8DCF2;
+  border: none;
+  border-radius: 12px;
+}
+
+@media (min-width: 445px) {
+  .form__nav-item {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+  }
+  .form__main {
+    padding: 32px 64px 32px 64px;
+  }
+  .form__input {
+    font-size: 16px;
+  }
+  .form__input--main {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+  }
+  .form__label-header {
+    font-size: 16px;
+  }
+  .form__paragraph {
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

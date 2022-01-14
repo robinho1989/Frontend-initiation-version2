@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend-initiation vol2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Roboto:ital,wght@0,400;0,500;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <form action="" class="form">
+
+        <header class="form__header">
+            <nav class="form__nav">
+                <ul class="form__nav-list">
+                    <li class="form__nav-item nav form__nav-item--active" type="link">About </li>
+                    <li class="form__nav-item">Bio</li>
+                    <li class="form__nav-item">Contact</li>
+                </ul>
+            </nav>
+            <div class="form__avatar"></div>
+            <input type="text" class="form__input form__input--head" value="Your name">
+        </header>
+        <section class="form__main">
+            <label class="form__label-container"><label class="form__label-header">Superpower </label>
+                <input type="text" class="form__input form__input--main"
+                    value="What are your design superpowers"></label>
+            <label class="form__label-container"><label class="form__label-header">Weakness </label>
+                <input type="text" class="form__input form__input--main" value="Where can you grow?"></label>
+            <label class="form__label-container"><label class="form__label-header">Tools of the trade </label>
+                <input type="text" class="form__input form__input--main"
+                    value="What tools are you proficient in?"></label>
+            <label class="form__label-container"><label class="form__label-header">Guilty pleasures </label>
+                <input type="text" class="form__input form__input--main" value="3 guilty pleasures."></label>
+
+            <div class="form__range-description">
+                <p class="form__paragraph">Introvert</p>
+                <p class="form__paragraph">Extrovert</p>
+            </div>
+            <input type="range" class="form__range">
+            <button class="form__btn">Send</button>
+        </section>
+    </form>
+
+</body>
+
+</html>
